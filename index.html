@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Inventory</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar d-flex justify-content-between align-items-center mb-3">
+            <h1 class="mb-0">Chemical Supplies</h1>
+            <div>
+                <button id="addRow" class="btn btn-primary" title="Add Row">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button id="moveUp" class="btn btn-secondary" title="Move Up">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <button id="moveDown" class="btn btn-secondary" title="Move Down">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button id="deleteRow" class="btn btn-danger" title="Delete Row">
+                    <i class="fas fa-trash"></i>
+                </button>
+                <button id="refresh" class="btn btn-info" title="Refresh Data">
+                    <i class="fas fa-sync"></i>
+                </button>
+                <button id="save" class="btn btn-success" title="Save Data">
+                    <i class="fas fa-save"></i>
+                </button>
+            </div>
+        </div>
+
+        <table id="chemicalTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Chemical Name</th>
+                    <th>Vendor</th>
+                    <th>Density</th>
+                    <th>Viscosity</th>
+                    <th>Packaging</th>
+                    <th>Pack Size</th>
+                    <th>Unit</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
